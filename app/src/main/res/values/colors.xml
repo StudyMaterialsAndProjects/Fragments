@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <!--Fragment Background-->
+    <color name="sample_fragment_background">#35e8d9</color>
+    <color name="mainActivity_background">#d60b18</color>
+
+    <!--Normal Colors-->
+    <color name="white_Color">#f5f5f5</color>
+
+
+    <!--Button colors-->
+    <color name="button_1">#1635e0</color>
+    <color name="button_2">#02F67A</color>
+    <color name="button_3">#FF05EF</color>
+</resources>

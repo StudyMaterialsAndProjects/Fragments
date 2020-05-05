@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainActivity_background"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Main Activity"
+        android:textColor="@color/white_Color"
+        android:textSize="25dp"
+        android:textStyle="bold|italic">
+    </TextView>
+    <fragment
+        android:id="@+id/sample_fragment"
+        android:name="com.Fragments.Fragments.SampleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="12dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="3.0">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 1 "
+            android:layout_weight="1"
+            android:textColor="@color/white_Color"
+            android:background="@color/button_1"
+            >
+        </Button>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:layout_weight="1"
+            android:background="@color/button_2"
+            android:textColor="@color/white_Color"
+            >
+        </Button>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3"
+            android:layout_weight="1"
+            android:background="@color/button_3"
+            android:textColor="@color/white_Color"
+            >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

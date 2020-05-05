@@ -1,0 +1,8 @@
+Fragments
+--------
+We can add the Fragment in 2 ways.
+a)Statically adding the Fragment.(Using XML file)
+b)Dynamically adding the Fragment.(Using Java code.)
+
+
+Fragments should not be declared in the manifest file.
