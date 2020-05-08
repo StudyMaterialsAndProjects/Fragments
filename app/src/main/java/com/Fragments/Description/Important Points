@@ -6,3 +6,33 @@ b)Dynamically adding the Fragment.(Using Java code.)
 
 
 Fragments should not be declared in the manifest file.
+
+
+Adding a Fragment using a JavaCode.
+1)Fragment Tag used in the mainActivity should be removed.
+2)We need to use the place holder which can hold the fragment.
+Place Holder might be Frame Layout,Linear Layout,Relative Layout any layout.
+For simplicity we are using FrameLayout,FrameLayout is designed in such a way that it will block a
+particular area on the screen for hosting a particualr widget.
+using a FrameLayout is a standard practise.
+
+Fragment Transaction includes these 3 operation.
+Add
+Replace
+Remove
+
+To make a FragmentTransaction Android provides a API called Fragment Transaction.
+To get hold of the Fragment Transaction we will be using another API  called Fragment Manager.
+
+Steps are
+1)Use an Activity to get hold of the FragmentManager.
+2)Using the FragmentManager get hold of the FragmentTransaction.
+
+
+
+Note:-
+FragmentManager fragmentManager=getFragmentManager();
+we cannot use getFragmentManager(); because this API is not supported by the AppCompatActivity in Activity.
+AppCompatActivity is provided in mind to support older version of android.
+
+so instead of using getFragmentManager(); we will using FragmentManager fragmentManager=getSupportFragmentManager();
